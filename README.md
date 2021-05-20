@@ -31,7 +31,7 @@
   Construção da máscara  usando const, (regular expression ou Regex), return, replace etc.
   Buscador de CEP usando fuction, variavéis, json, if, else.
   
-  FONTES de pesquisas:https://viacep.com.br/exemplo/javascript/ , https://www.devmedia.com.br/validar-cpf-com-javascript/23916, [18:27, 15/05/2021] Paulo S@uza: https://www.vivaolinux.com.br/dica/Campo-obrigatorio-HTML-+-Javascript, https://forum.scriptbrasil.com.br/topic/187099-campo-obrigat%C3%B3rio-javascript/,  https://www.devmedia.com.br/html5-validator-validando-formularios-com-html5/28785 entre outras ajudas.
+  FONTES de pesquisas:https://viacep.com.br/exemplo/javascript/ , https://www.devmedia.com.br/validar-cpf-com-javascript/23916,  https://www.vivaolinux.com.br/dica/Campo-obrigatorio-HTML-+-Javascript, https://forum.scriptbrasil.com.br/topic/187099-campo-obrigat%C3%B3rio-javascript/,  https://www.devmedia.com.br/html5-validator-validando-formularios-com-html5/28785 entre outras ajudas.
   
   
   
