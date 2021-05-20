@@ -6,7 +6,7 @@
  
  #Regra de Negócio
  
- Os campos Nome, Cpf, Endereco, Numero, Telefone Celular são <b>obrigatórios<b>
+ Os campos Nome, Cpf, Endereco, Numero, Telefone Celular são <b>obrigatórios</b>
   (done)
   
   #Implementação no HTML
