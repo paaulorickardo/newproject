@@ -2,12 +2,12 @@
 
 #Desafio Cadastro Pessoal - Atração
  Cadastro Pessoal com os campos: Nome, Cpf, Rg, Sexo, Endereco, Numero, Bairro, Cidade, Estado, Cep, Telefone Fixo, Telefone Celular.
- (done)
+ <b>(done)</b>
  
  #Regra de Negócio
  
  Os campos Nome, Cpf, Endereco, Numero, Telefone Celular são <b>obrigatórios</b>
-  (done)
+  <b>(done)</b>
   
   #Implementação no HTML
   
