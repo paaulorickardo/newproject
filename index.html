@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+  <title>Formulário de Registro</title>
+  <!--favicon com ícone da title-->
+  <link type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!--Imagem acima do formulário-->
+  <div class="imgtop">
+    <img src="favicon.png" width="10%">
+    <h1 class="line typing-animation">Itaú o banco feito para você!<h1>
+  </div>
+
+  <div id="main-container">
+    <h2>Cadastre-se para acessar o sistema</h2><br>
+
+    <!-- Formulario -->
+
+    <form onsubmit="event.preventDefault(); validate()">
+
+      <!-- DADOS PESSOAIS-->
+
+      <div class="half-box spacing">
+        <label for="filed_rg">RG :</label>
+        <input type="text" name="rg" size="13" maxlength="13" placeholder="Número do RG">
+      </div>
+
+      <div class="half-box">
+        <label for="field_cpf">CPF *:</label>
+        <input type="text" name="cpf" onblur="CPF()" data-js="cpf" id="field_cpf" placeholder="xxx.xxx.xxx-xx"
+          maxlength="14">
+        <label class="validation-error hidden" id="cpfhelp">*Campo Obrigatório*</label>
+      </div>
+
+      <div class="half-box spacing">
+        <label for="field_name">Nome *: </label>
+        <input type="text" name="nome" id="field_name" placeholder="Digite seu nome" maxlength="20">
+        <label class="validation-error hidden" id="namehelp">*Campo Obrigatório*</label>
+      </div>
+
+      <div class="half-box">
+        <label for="field_sobrenome">Sobrenome *:</label>
+        <input type="text" id="field_sobrenome" placeholder="Digite seu sobrenome" maxlength="20">
+        <label class="validation-error hidden" id="lastnamehelp">*Campo Obrigatório*</label>
+      </div>
+
+      <div class="half-box2">
+        <label for="field_nasc">Nascimento:</label>
+        <input type="text" data-js="date" name="datanasc" maxlength="10" placeholder="dd/mm/aaaa">
+
+      </div>
+      <div class="half-box">
+        <label for="field_sex">Sexo:</label>
+        <select name="field_sex">
+          <option value="M">Masculino</option>
+          <option value="F">Feminino</option>
+        </select>
+      </div>
+
+      <div class="half-box spacing">
+        <label for="field_telfx">Telefone Fixo:</label>
+        <input type="text" name="telefone_fixo" id="field_telfx" placeholder="(xx)xxxx-xxxx" maxlength="14">
+      </div>
+
+      <div class="half-box">
+        <label for="field_telcel">Celular *:</label>
+        <input type="text" name="Celular" id="field_telcel" data-js="phone" placeholder="(xx)xxxxx-xxxx"
+          data-min-length="12" maxlength="20">
+        <label class="validation-error hidden" id="cellhelp">*Campo Obrigatório*</label>
+      </div>
+
+      <!--ENDEREÇO-->
+
+      <div class="half-box spacing">
+        <label for="cep">CEP *: </label>
+        <input type="text" data-js="cep" onblur="pesquisacep(this.value);" id="field_cep" name="cep"
+          placeholder="xx.xxx-xxx">
+        <label class="validation-error hidden" id="cephelp">*Campo Obrigatório*</label>
+      </div>
+
+      <div class="half-box">
+        <label for="rua">Rua *:</label>
+        <input type="text" id="field_rua" name="rua" placeholder="Digite o nome da rua">
+        <label class="validation-error hidden" id="adresshelp">*Campo Obrigatório*</label>
+      </div>
+
+      <div class="half-box spacing">
+        <label for="numero">Numero/Complemento *:</label>
+        <input type="text" id="field_number" name="numero" size="4" maxlength="22" placeholder="Ex: N°xx /Qd xx lt xx">
+        <label class="validation-error hidden" id="numbhelp">*Campo Obrigatório*</label>
+      </div>
+
+      <div class="half-box">
+        <label for="lastname">Bairro *:</label>
+        <input type="text" name="bairro" id="field_bairro" placeholder="Digite o nome do bairro" maxlength="20">
+        <label class="validation-error hidden" id="bairrohelp">*Campo Obrigatório*</label>
+      </div>
+
+      <div class="half-box spacing">
+        <label for="cidade">Cidade *: </label>
+        <input type="text" id="field_city" name="cidade" placeholder="Nome da Cidade">
+        <label class="validation-error hidden" id="cityhelp">*Campo Obrigatório*</label>
+      </div>
+
+      <div class="half-box spacing">
+        <label for="uf">Estado *: </label>
+        <input type="text" id="field_uf" name="estado" placeholder="Nome do Estado">
+        <label class="validation-error hidden" id="ufhelp">*Campo Obrigatório*</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="agreement" id="agreement">
+        <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso</a></label>
+      </div>
+
+      <!-- Botão enviar cadastro-->
+
+      <div class="full-box">
+        <input id="btn-submit" onclick="validate()" type="submit" value="Enviar Cadastro">
+      </div>
+    </form>
+    <!--Fim do formulário-->
+  </div>
+
+  <script src="script.js"></script>
+
+  <footer>
+    <!--rodape-->
+    <div class="footer">
+      <br />
+      <a href="https://github.com/paaulorickardo/newproject"><img src="github.png"
+          href="https://github.com/paaulorickardo/newproject" class="git"></a><br>
+      <br />
+      <br />
+      <p>Copyrigth 2020. All rights reserved.</p>
+  </footer>
+  <!--rodape-->
+</body>
+</html>

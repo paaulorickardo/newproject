@@ -1,0 +1,164 @@
+/* geral */
+* {
+  margin: 0; /* forma de resetar o que vem padrão do navegador*/
+  padding: 0;/* forma de resetar o que vem padrão do navegador*/
+  box-sizing: border-box; /*Os inputs respeitam a largura do box*/
+  font-family: Arial, Helvetica, sans-serif;
+  color: #323232;
+  border: none;
+}
+
+input, label {
+  display: block;
+  outline: none;
+  width: 100%;
+}
+
+a {
+  color: blue;
+}
+
+body {
+  padding-top: 5vh; /*view-heigth-> 5% da tela // Espaçamento do titulo com a tela*/
+  background-color: #EC7000; /*Referencia do site cor*/
+  background-position-y: -150px; /* Posição para subir um pouco o box*/
+}
+
+/* formulário */
+#main-container {
+  width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+#main-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.6rem; /*adaptada ao elemento roots / vai ser 1.6 vezes root ao elemento da página */
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap; /*alinha os elementos conforme for digitando*/
+  justify-content: space-between;
+}
+
+.full-box {
+  flex: 1 1 100%; /* 1 groff 1 swin */
+  
+}
+
+.half-box {
+  flex: 1 1 45%; /*45% espaço entre um e outro*/
+  position: relative;
+}
+
+.half-box2 {
+ flex: 1 1 45%;
+ position: relative;
+ 
+}
+
+.hidden {
+  display: none;
+}
+
+h2{
+  margin-bottom: 0.7rem;
+  color: rgb(24, 7, 177);
+}
+
+h1{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.imgtop{
+  text-align: center;
+  
+  }
+
+label.validation-error {
+  color: #ff1a1a;
+  position: absolute; /*Pra poder encaixar nos inputs*/
+  top: 57px;
+  font-size: 12px;
+}
+
+/*Efeito de escrever  como se estivesse digitando*/
+
+.typing-animation{
+  animation:  typing 4s steps(40) 1s normal;
+}
+
+@keyframes typing{
+  from{
+    width: 0;
+  }
+  to{
+      width: 18em;
+  }
+}
+
+.line{
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*Efeito de escrever  como se estivesse digitando*/
+
+.spacing {
+  margin-right: 2.5%; /*Vai ter o espaço sem prejudicar o layout a referencia html half-box spacing*/
+}
+
+label {
+  font-weight: bold;
+  font-size: .8rem; /*80% da fonte root*/
+}
+
+input {
+  border-bottom: 2px solid #323232;
+  padding: 10px;
+  font-size: .9rem;
+  margin-bottom: 40px;
+}
+
+input:focus {
+  border-color: #EC7000; /*muda a cor da linha quando clicada*/
+}
+
+input[type="submit"] {
+  background-color: #EC7000;
+  color: #FFF;
+  border: none; /*não vai ter borda*/
+  border-radius: 20px;
+  height: 40px;
+  cursor: pointer;/*Efeito de botão quando passar o mouse*/
+}
+
+#agreement {
+  margin-right: 5px; /*regulando espaçamento*/
+}
+
+#agreement, #agreement-label {
+  display: inline-block;  /*regulando espaçamento*/
+  width: auto;
+}
+
+.footer{
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.git{
+  width: 3%;
+}
+    
